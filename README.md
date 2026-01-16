@@ -16,7 +16,8 @@ This project demonstrates database design, SQL querying, reporting, and GitHub v
 
 ## 📂 Project Structure
 
-```##sql-employee-management/
+```
+##sql-employee-management/
 ├── sql/
 │   ├── create_tables.sql
 │   ├── insert_data.sql
@@ -80,3 +81,4 @@ having sum(s.salary) > 60000;
 📸![screenshots](screenshots/department_with_salary_60000_(HAVING).png)
 
 ```
+
