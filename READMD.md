@@ -16,6 +16,8 @@ This project demonstrates database design, SQL querying, reporting, and GitHub v
 
 ## 📂 Project Structure
 
+```
+
 sql-employee-management/
 ├── sql/
 │   ├── create_tables.sql
@@ -26,7 +28,7 @@ sql-employee-management/
 │   ├── active_employee.png
 │   ├── employee_department_role.png
 │   └── department_salary.png
-└── README.md
+└── README.md ```
 
 
 ## 🧱 Tables Created
@@ -78,6 +80,7 @@ group by d.dept_name
 having sum(s.salary) > 60000;
 
 📸![screenshots](screenshots/department_with_salary_60000_(HAVING).png)
+
 
 
 
