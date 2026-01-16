@@ -1,0 +1,29 @@
+--Active employee list
+
+select * from employee
+where status='active';
+
+--employee with department & role (JOIN)
+
+select E.emp_name, D.dept_name, R.role_name
+FROM employee E
+JOIN department D ON E.dept_id= D.dept_id
+JOIN roles R ON E.role_id = R.role_id;
+
+
+--department-wise salary report
+
+select d.dept_name, sum(s.salary) as total_salary
+from employee e
+join department d on e.dept_id = d.dept_id
+join salary s on e.emp_id = s.emp_id
+group by d.dept_name;
+
+--department with salary > 60000 (HAVING)
+
+select d.dept_name, sum(s.salary) as total_salary
+from employee e
+join department d on e.dept_id = d.dept_id
+join salary s on e.emp_id = s.emp_id
+group by d.dept_name
+having sum(s.salary) > 60000;

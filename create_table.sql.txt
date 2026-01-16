@@ -1,0 +1,15 @@
+--create department table
+
+
+create table department(dept_id int primary key,dept_name varchar(25));
+
+--Create roles Table
+
+create or replace table roles(role_id int primary key,role_name varchar(25));
+
+--create employee table
+
+create table employee(emp_id int,emp_name varchar,dept_id int,role_id int,status varchar);
+
+--create salary table
+create table salary(emp_id int,salary number(10,2));

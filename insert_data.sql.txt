@@ -1,0 +1,19 @@
+--Insert Sample Data
+
+insert into department values
+(1,'hr'), (2,'it'), (3,'finance');
+
+insert into roles values
+(1,'manager'), (2,'developer'), (3,'analyst');
+
+insert into employee values
+(101,'priya',2,2,'active'),
+(102,'anu',1,1,'active'),
+(103,'rahul',3,3,'inactive');
+
+insert into salary values
+(101,60000),
+(102,70000),
+(103,50000);
+
+select * from employee;
